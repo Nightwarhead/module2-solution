@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+ }
+
+h1{
+    text-align: center;
+    font-family:Comic Sans MS,sans-serif;
+}
+
+
+#main{
+    margin-top: 1%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+section{
+    border:1px solid black;
+    background-color: grey;
+}
+
+
+#a{background-color: plum;}
+#b{background-color: tomato;color: white;}
+#c{background-color: sandybrown;}
+
+
+
+
+p{
+    padding: 5%;
+}
+
+
+
+
+.headings{
+    border:1px solid black;
+    border-top: none;
+    border-right: none;
+    text-align: center;
+    float: right;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+/* ##### DESKTOP #####*/
+
+@media (min-width:992px){
+    section{
+        float: left;
+        width: 30%;
+    }
+    #main{
+        display: flex;
+        justify-content:space-evenly;
+    }
+
+}
+
+/* ##### TABLET #####*/
+
+
+@media (min-width:768px) and (max-width:991px){
+    section{
+        margin: 2.5%;
+    }
+    #s1{
+        float: left;
+        width: 45%;
+    }
+    #s2{
+        float: right;
+        width: 45%;
+    }
+    #s3{
+        clear: both;
+    }
+}
+
+/* ##### PHONE #####*/
+@media (max-width:767px){
+    section{
+        margin: 5%;
+    }
+
+}
